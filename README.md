@@ -14,9 +14,8 @@ An intelligent resume screening system built with **Next.js** and powered by **G
 
 - [Overview](#-overview)
 - [Features](#-features)
-- [Tech Stack](#-tech-stack)
+- [Tech Stack](#️-tech-stack)
 - [Installation](#-installation)
-- [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Environment Variables](#-environment-variables)
 - [Scripts](#-scripts)
@@ -25,14 +24,12 @@ An intelligent resume screening system built with **Next.js** and powered by **G
 - [License](#-license)
 - [Author](#-author)
 - [Support](#-support)
-
----
+<br></br>
 
 ## 🎯 Overview
 
 The **AI Resume Screening System** leverages the power of **Google Gemini API** to intelligently parse, format, and align resumes with job descriptions. Built on the **Next.js** framework, it provides a fast, modern, and responsive web interface for recruiters and HR professionals to streamline their hiring process.
-
----
+<br></br>
 
 ## ✨ Features
 
@@ -44,8 +41,7 @@ The **AI Resume Screening System** leverages the power of **Google Gemini API** 
 - ⚡ **Fast & Responsive UI** — Built with Next.js for optimal performance
 - 🔍 **Skill Extraction** — Identifies and highlights key skills from resumes
 - 📋 **Batch Processing** — Screen multiple resumes at once
-
----
+<br></br>
 
 ## 🛠️ Tech Stack
 
@@ -56,8 +52,7 @@ The **AI Resume Screening System** leverages the power of **Google Gemini API** 
 | **JavaScript** | Core scripting |
 | **CSS** | Styling and layout |
 | **Google Gemini API** | AI resume formatting, alignment & analysis |
-
----
+<br></br>
 
 ## 📦 Installation
 
@@ -99,8 +94,7 @@ Add your Gemini API key to .env.local (see Environment Variables)
     yarn dev
     # or
     pnpm dev
-
----
+<br></br>
 
 ## 🚀 Overview
 
@@ -118,6 +112,7 @@ Add your Gemini API key to .env.local (see Environment Variables)
 ### 4. View Results
     - View the match score, extracted skills, and formatted resume output
     - Download or export the screening report.
+    <br></br>
 
 ## 📁 Project Structure
 
@@ -149,7 +144,6 @@ Add your Gemini API key to .env.local (see Environment Variables)
     ├── tsconfig.json                  # TypeScript configuration
     ├── package.json                   # Project dependencies
     └── README.md                      # Project documentation
-
 <br></br>
 
 # 🔐 Environment Variables
@@ -167,7 +161,6 @@ Add your Gemini API key to .env.local (see Environment Variables)
     NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 ### """⚠️ Never commit your .env.local file to version control."""
-
 <br></br>
 
 # 🧪 Scripts
@@ -188,6 +181,7 @@ Add your Gemini API key to .env.local (see Environment Variables)
 2. Go to vercel.com and import your repository
 3. Add your environment variables in the Vercel dashboard.
 4. Click Deploy 🚀
+<br></br>
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kdsking19/AI_Resume_Screening_System) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kdsking19/AI_Resume_Screening_System)
 
