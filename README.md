@@ -1,36 +1,211 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 AI Resume Screening System
 
-## Getting Started
+An intelligent resume screening system built with **Next.js** and powered by **Google Gemini AI** that automates the process of analyzing, formatting, and evaluating resumes against job requirements.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Table of Contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Environment Variables](#-environment-variables)
+- [Scripts](#-scripts)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
+- [Support](#-support)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Overview
 
-To learn more about Next.js, take a look at the following resources:
+The **AI Resume Screening System** leverages the power of **Google Gemini API** to intelligently parse, format, and align resumes with job descriptions. Built on the **Next.js** framework, it provides a fast, modern, and responsive web interface for recruiters and HR professionals to streamline their hiring process.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+- 🤖 **AI-Powered Analysis** — Uses Google Gemini API to intelligently read and evaluate resumes
+- 📄 **Resume Formatting** — Automatically formats and aligns resume content for consistency
+- 🎯 **Job Matching** — Matches candidate profiles against job descriptions
+- 📊 **Scoring System** — Generates compatibility scores for each candidate
+- 📁 **Resume Upload** — Supports uploading resumes in PDF/DOCX format
+- ⚡ **Fast & Responsive UI** — Built with Next.js for optimal performance
+- 🔍 **Skill Extraction** — Identifies and highlights key skills from resumes
+- 📋 **Batch Processing** — Screen multiple resumes at once
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Next.js** | Full-stack React framework |
+| **TypeScript** | Type-safe JavaScript |
+| **JavaScript** | Core scripting |
+| **CSS** | Styling and layout |
+| **Google Gemini API** | AI resume formatting, alignment & analysis |
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+
+- **Node.js** v18 or higher
+- **npm** or **yarn** or **pnpm**
+- **Google Gemini API Key** — Get one at [Google AI Studio](https://makersuite.google.com/)
+
+### Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/kdsking19/AI_Resume_Screening_System.git
+   cd AI_Resume_Screening_System
+
+2. **Install Dependencies**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+
+3. **Set up environment variables**
+
+    ```bash
+    cp .env.example .env.local
+
+Add your Gemini API key to .env.local (see Environment Variables)
+
+4. **Run the development server**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+
+## 🚀 Overview
+
+### 1. Upload a Resume
+    - Navigate to the home page.
+    - Upload a resume in PDF or DOCX format.
+
+### 2. Enter Job Description
+    - Paste or type the job description in the provided input field.
+
+### 3. AI Screening
+    - Click "Lauch 3D Analysis".
+    - The Gemini API will analyze, format, and align the resume content against the job requirements.
+
+### 4. View Results
+    - View the match score, extracted skills, and formatted resume output
+    - Download or export the screening report.
+
+## 📁 Project Structure
+
+AI_Resume_Screening_System/
+├── public/                        # Static assets
+├── src/
+│   ├── app/                       # Next.js App Router
+│   │   ├── layout.tsx             # Root layout
+│   │   ├── page.tsx               # Home page
+│   │   └── api/                   # API Routes
+│   │       └── screen/
+│   │           └── route.ts       # Resume screening API endpoint
+│   ├── components/                # Reusable UI components
+│   │   ├── ResumeUpload.tsx       # Resume upload component
+│   │   ├── JobDescription.tsx     # Job description input component
+│   │   ├── ScreeningResult.tsx    # Screening result display
+│   │   └── ScoreCard.tsx          # Score display component
+│   ├── lib/                       # Utility functions & Gemini config
+│   │   ├── gemini.ts              # Gemini API integration
+│   │   └── helpers.ts             # Helper functions
+│   ├── styles/                    # CSS stylesheets
+│   │   └── globals.css            # Global styles
+│   └── types/                     # TypeScript type definitions
+│       └── index.ts               # Type definitions
+├── .env.local                     # Environment variables (not committed)
+├── .env.example                   # Example environment file
+├── next.config.js                 # Next.js configuration
+├── tsconfig.json                  # TypeScript configuration
+├── package.json                   # Project dependencies
+└── README.md                      # Project documentation
+
+# 🔐 Environment Variables
+
+Create a .env.local file in the root directory and add the following:
+
+## Google Gemini API Key
+GEMINI_API_KEY=your_gemini_api_key_here
+
+## Next.js App URL
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+"""⚠️ Never commit your .env.local file to version control."""
+
+# 🧪 Scripts
+
+| Command |	Description |
+| npm run dev |	Start development server |
+| npm run build | Build for production |
+| npm run start | Start production server |
+| npm run lint | Run ESLint |
+
+# 🌐 Deployment
+## Deploy on Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to vercel.com and import your repository
+3. Add your environment variables in the Vercel dashboard.
+4. Click Deploy 🚀
+
+[Vercel](https://vercel.com/new/clone?repository-url=https://github.com/kdsking19/AI_Resume_Screening_System)
+
+# 🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch
+
+   ```bash
+   git checkout -b feature/AmazingFeature
+
+3. Commit your changes.
+
+   ```bash
+   git commit -m "Add AmazingFeature"
+
+4. Push to the branch.
+
+   ```bash
+   git push origin feature/AmazingFeature
+
+5. Open a Pull Request
+
+# 📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+# 👨‍💻 Author
+kdsking19 — [GitHub Profile] (https://github.com/kdsking19)
+
+# 🙋 Support
+If you encounter any issues or have questions:
+
+- Open an [Issue] (https://github.com/kdsking19/AI_Resume_Screening_System/issues)
+- Contact the maintainer via GitHub
