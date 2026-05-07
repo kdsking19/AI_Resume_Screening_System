@@ -119,33 +119,34 @@ Add your Gemini API key to .env.local (see Environment Variables)
 
 ## 📁 Project Structure
 
-AI_Resume_Screening_System/
-├── public/                        # Static assets
-├── src/
-│   ├── app/                       # Next.js App Router
-│   │   ├── layout.tsx             # Root layout
-│   │   ├── page.tsx               # Home page
-│   │   └── api/                   # API Routes
-│   │       └── screen/
-│   │           └── route.ts       # Resume screening API endpoint
-│   ├── components/                # Reusable UI components
-│   │   ├── ResumeUpload.tsx       # Resume upload component
-│   │   ├── JobDescription.tsx     # Job description input component
-│   │   ├── ScreeningResult.tsx    # Screening result display
-│   │   └── ScoreCard.tsx          # Score display component
-│   ├── lib/                       # Utility functions & Gemini config
-│   │   ├── gemini.ts              # Gemini API integration
-│   │   └── helpers.ts             # Helper functions
-│   ├── styles/                    # CSS stylesheets
-│   │   └── globals.css            # Global styles
-│   └── types/                     # TypeScript type definitions
-│       └── index.ts               # Type definitions
-├── .env.local                     # Environment variables (not committed)
-├── .env.example                   # Example environment file
-├── next.config.js                 # Next.js configuration
-├── tsconfig.json                  # TypeScript configuration
-├── package.json                   # Project dependencies
-└── README.md                      # Project documentation
+    ``` bash
+    AI_Resume_Screening_System/
+    ├── public/                        # Static assets
+    ├── src/
+    │   ├── app/                       # Next.js App Router
+    │   │   ├── layout.tsx             # Root layout
+    │   │   ├── page.tsx               # Home page
+    │   │   └── api/                   # API Routes
+    │   │       └── screen/
+    │   │           └── route.ts       # Resume screening API endpoint
+    │   ├── components/                # Reusable UI components
+    │   │   ├── ResumeUpload.tsx       # Resume upload component
+    │   │   ├── JobDescription.tsx     # Job description input component
+    │   │   ├── ScreeningResult.tsx    # Screening result display
+    │   │   └── ScoreCard.tsx          # Score display component
+    │   ├── lib/                       # Utility functions & Gemini config
+    │   │   ├── gemini.ts              # Gemini API integration
+    │   │   └── helpers.ts             # Helper functions
+    │   ├── styles/                    # CSS stylesheets
+    │   │   └── globals.css            # Global styles
+    │   └── types/                     # TypeScript type definitions
+    │       └── index.ts               # Type definitions
+    ├── .env.local                     # Environment variables (not committed)
+    ├── .env.example                   # Example environment file
+    ├── next.config.js                 # Next.js configuration
+    ├── tsconfig.json                  # TypeScript configuration
+    ├── package.json                   # Project dependencies
+    └── README.md                      # Project documentation
 
 # 🔐 Environment Variables
 
