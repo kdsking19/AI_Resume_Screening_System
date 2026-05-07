@@ -216,7 +216,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br></br>
 
-# 👨‍💻 Author
+# 👑 Author
 - [kdsking19](https://github.com/kdsking19)
 <br></br>
 
