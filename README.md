@@ -100,6 +100,8 @@ Add your Gemini API key to .env.local (see Environment Variables)
     # or
     pnpm dev
 
+---
+
 ## 🚀 Overview
 
 ### 1. Upload a Resume
@@ -148,25 +150,36 @@ Add your Gemini API key to .env.local (see Environment Variables)
     ├── package.json                   # Project dependencies
     └── README.md                      # Project documentation
 
+<br></br>
+
 # 🔐 Environment Variables
 
-Create a .env.local file in the root directory and add the following:
+### Create a .env.local file in the root directory and add the following:
 
 ## Google Gemini API Key
-GEMINI_API_KEY=your_gemini_api_key_here
+
+    ```bash
+    GEMINI_API_KEY=your_gemini_api_key_here
 
 ## Next.js App URL
-NEXT_PUBLIC_APP_URL=http://localhost:3000
+   
+    ```bash
+    NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-"""⚠️ Never commit your .env.local file to version control."""
+### """⚠️ Never commit your .env.local file to version control."""
+
+<br></br>
 
 # 🧪 Scripts
 
 | Command |	Description |
-| npm run dev |	Start development server |
-| npm run build | Build for production |
-| npm run start | Start production server |
-| npm run lint | Run ESLint |
+|---|---|
+| ***npm run dev*** |	Start development server |
+| ***npm run build*** | Build for production |
+| ***npm run start*** | Start production server |
+| ***npm run lint*** | Run ESLint |
+
+<br></br>
 
 # 🌐 Deployment
 ## Deploy on Vercel (Recommended)
@@ -177,6 +190,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 4. Click Deploy 🚀
 
 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/kdsking19/AI_Resume_Screening_System)
+<br></br>
 
 # 🤝 Contributing
 Contributions are welcome! Please follow these steps:
@@ -197,16 +211,19 @@ Contributions are welcome! Please follow these steps:
    ```bash
    git push origin feature/AmazingFeature
 
-5. Open a Pull Request
+5. Open a Pull Request.
+<br></br>
 
 # 📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+- This project is licensed under the MIT License — see the LICENSE file for details.
+<br></br>
 
 # 👨‍💻 Author
-kdsking19 — [GitHub Profile] (https://github.com/kdsking19)
+- [kdsking19](https://github.com/kdsking19)
+<br></br>
 
 # 🙋 Support
 If you encounter any issues or have questions:
 
-- Open an [Issue] (https://github.com/kdsking19/AI_Resume_Screening_System/issues)
-- Contact the maintainer via GitHub
+- Open an [Issue](https://github.com/kdsking19/AI_Resume_Screening_System/issues).
+- Contact the maintainer via GitHub.
