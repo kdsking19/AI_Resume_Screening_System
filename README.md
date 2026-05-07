@@ -156,12 +156,12 @@ Add your Gemini API key to .env.local (see Environment Variables)
 
 ### Create a .env.local file in the root directory and add the following:
 
-## Google Gemini API Key
+1. Google Gemini API Key
 
     ```bash
     GEMINI_API_KEY=your_gemini_api_key_here
 
-## Next.js App URL
+2. Next.js App URL
    
     ```bash
     NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -189,7 +189,8 @@ Add your Gemini API key to .env.local (see Environment Variables)
 3. Add your environment variables in the Vercel dashboard.
 4. Click Deploy 🚀
 
-[Vercel](https://vercel.com/new/clone?repository-url=https://github.com/kdsking19/AI_Resume_Screening_System)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kdsking19/AI_Resume_Screening_System) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kdsking19/AI_Resume_Screening_System)
+
 <br></br>
 
 # 🤝 Contributing
@@ -214,8 +215,11 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request.
 <br></br>
 
-# 📄 License
-- This project is licensed under the MIT License — see the LICENSE file for details.
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br></br>
 
 # 👨‍💻 Author
