@@ -119,7 +119,7 @@ Add your Gemini API key to .env.local (see Environment Variables)
 
 ## 📁 Project Structure
 
-    ``` bash
+    ```bash
     AI_Resume_Screening_System/
     ├── public/                        # Static assets
     ├── src/
