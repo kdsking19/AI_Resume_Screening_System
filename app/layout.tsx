@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AI Resume Screening System",
   description: "AI-powered resume screening application",
+  icons : {
+    icon: "/favicon1.ico.svg",
+  },
 };
 
 export default function RootLayout({
